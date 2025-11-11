@@ -556,6 +556,102 @@
 
 ---
 
+### 2. MCP Playground
+
+**Описание:** Open-source инструменты для тестирования и отладки MCP (Model Context Protocol) серверов. Несколько реализаций от разных команд.
+
+**GitHub:**
+- https://github.com/rosaboyle/mcp-playground (TRMX - desktop tool)
+- https://github.com/wso2/wso2-mcp-playground (WSO2 - web-based)
+
+**Статистика:**
+- 🔧 Несколько активных реализаций
+- 🌐 Desktop и web-based версии
+- 🆓 Бесплатный и open source
+
+**Лицензия:** MIT License (TRMX реализация)
+
+**Использование LLM:**
+- Тестирование MCP серверов с встроенной LLM интеграцией
+- Поддержка Fireworks AI, Groq и других провайдеров
+- Debugging tools, resources, и prompts от MCP серверов
+- Browser-based или desktop интерфейс
+
+**Основные возможности:**
+- MCP Server Debugging
+- Explore tools, resources, prompts
+- "Postman, but for MCPs"
+- Built-in LLM providers
+- Community-driven development
+
+**Product Hunt:** Best of November 2025
+
+---
+
+### 3. Helicone.ai - AI Gateway
+
+**Описание:** Open source LLM observability platform и AI gateway. One line of code для monitor, evaluate, и experiment. Y Combinator W23.
+
+**GitHub:**
+- https://github.com/Helicone/ai-gateway (AI Gateway)
+- https://github.com/Helicone/helicone (Main platform)
+
+**Статистика:**
+- 🏆 Y Combinator W23 startup
+- 🚀 Trusted by 90%+ users running 5+ LLMs in production
+- ⚡ Built on Rust для performance
+
+**Лицензия:** Apache License 2.0
+
+**Использование LLM:**
+- Поддержка OpenAI, Anthropic, Google, AWS Bedrock, 20+ провайдеров
+- Access 100+ models с 1 API
+- LLM observability и monitoring
+- Evaluation и experimentation
+
+**Основные возможности:**
+- Fastest, lightest AI gateway
+- Caching, custom rate limits
+- LLM security features
+- 0% markup fees
+- Simple to self-host (docker-compose)
+- Open telemetry support
+
+**Product Hunt:** Best of November 2025
+
+---
+
+### 4. Packmind Open Source
+
+**Описание:** Open source framework для Context Engineering - versioning, distributing, и enforcing organizational standards across repos и coding agents.
+
+**GitHub:** https://github.com/PackmindHub/packmind
+
+**Статистика:**
+- 📊 ~65% commits from coding agents в production
+- 🔄 Recently launched на Hacker News
+- 📚 Full documentation available
+
+**Лицензия:** Open Source
+
+**Использование LLM:**
+- Turns engineering playbook into AI context, guardrails, governance
+- Integration с Copilot, Cursor, Claude Code, Codex, Kiro
+- MCP server для direct AI agent interaction
+- Auto-sync context across all repos & agents
+- Checks adherence и visualizes drift
+
+**Основные возможности:**
+- Captures scattered rules от wikis, ADRs, code reviews
+- Living playbook для AI coding assistants
+- Versioning и distribution standards
+- Context Engineering framework
+- Prevents AI-generated code drift
+
+**Product Hunt:** Best of November 2025
+
+---
+
 ## 🔍 Дополнительные находки (связанные проекты)
 
 ### Glass by Pickle Team
@@ -580,6 +676,41 @@
 - Проактивные подсказки и автоматическое создание заметок
 
 **Примечание:** Это отдельный проект от команды Pickle, не представленный в основном списке Product Hunt за ноябрь 2025.
+
+---
+
+### agor - AI Coding Orchestration
+
+Хотя **agor** выглядит как open source проект, он использует Business Source License (не полностью OSI open source):
+
+**Описание:** Multiplayer spatial canvas для координации multiple AI coding assistants на parallel tasks. GitHub-linked worktrees, automated workflow zones.
+
+**GitHub:** https://github.com/preset-io/agor
+
+**Лицензия:** Business Source License 1.1 (source-available, not OSI open source)
+
+**Использование LLM:**
+- Orchestrate Claude Code, Codex, Gemini sessions
+- Multiplayer canvas для team coordination
+- Manage git worktrees
+- Track AI conversations в real-time
+
+**Статус:** Source-available, но не полностью open source из-за лицензии.
+
+---
+
+## 🆕 Open Source проекты БЕЗ LLM (но полезные)
+
+### Swetrix - Analytics
+
+**Описание:** Open source, cookieless, privacy-first альтернатива Google Analytics с website speed monitoring и error tracking.
+
+**GitHub:** https://github.com/Swetrix/swetrix
+
+**Лицензия:** AGPL-3.0
+**Статистика:** < 5 KB lightweight tracking script
+
+**Product Hunt:** Best of November 2025
 
 ---
 
@@ -637,18 +768,25 @@
 
 ---
 
-## 📊 Итоговая статистика
+## 📊 Итоговая статистика November 2025
 
-**Всего проверено проектов:** 18
+**Всего проверено проектов:** 85+ (полный список из Product Hunt)
 
-**Проектов с AI/LLM функциями:** 7
-- Floqer, MeDo by Baidu, Jinna.ai, Context Link, Build0, Firecrawl v2.5, Parrot
+**Проектов с AI/LLM функциями:** 20+
+- Floqer, MeDo, Jinna.ai, Context Link, Build0, Firecrawl v2.5, Parrot, MCP Playground, Helicone.ai, Packmind, GitLaw Agent, Extra Thursday, Lovelace, Termdock, agor, Everywhere, Radiant, Brainfish, и др.
 
-**Open source проектов с LLM:** 1 (из представленных в Product Hunt November 2025)
-- ✅ Firecrawl v2.5
+**✅ Open source проектов с LLM:** 4 основных
+1. **Firecrawl v2.5** ⭐ 40k+ (также в октябре)
+2. **MCP Playground** (несколько реализаций)
+3. **Helicone.ai** (Y Combinator W23, Apache 2.0)
+4. **Packmind Open Source**
 
-**Дополнительных open source LLM проектов (от тех же команд):** 1
-- Glass by Pickle Team
+**🔍 Дополнительные находки:**
+- **Glass by Pickle Team** ⭐ 6.9k+ (от команды Pickle)
+- **agor** (Business Source License - не полностью open source)
+
+**🔧 Open source БЕЗ LLM:** 1
+- **Swetrix** (Google Analytics альтернатива, AGPL-3.0)
 
 ---
 
@@ -661,12 +799,12 @@
 
 ## Итоговые цифры
 
-**Всего проверено проектов:** 178+ (160+ октябрь + 18 ноябрь)
+**Всего проверено проектов:** 245+ (160+ октябрь + 85+ ноябрь)
 
-**✅ Open source проектов с LLM:** 10 основных
+**✅ Open source проектов с LLM:** 13 основных
 1. **n8n AI Workflow Builder** ⭐ 155k+ (октябрь)
-2. **Plane** ⭐ 39.8k+ (октябрь)
-3. **Firecrawl v2.5** ⭐ 40k+ (октябрь и ноябрь)
+2. **Firecrawl v2.5** ⭐ 40k+ (октябрь и ноябрь)
+3. **Plane** ⭐ 39.8k+ (октябрь)
 4. **Reflex** ⭐ 27k+ (октябрь)
 5. **Director / Stagehand** ⭐ 17.4k+ (октябрь)
 6. **Glass by Pickle Team** ⭐ 6.9k+ (ноябрь)
@@ -675,21 +813,26 @@
 9. **Ito** (октябрь, Voice Dictation)
 10. **ElevenLabs UI** ⭐ 1k+ (октябрь)
 11. **Starbase by Metorial** (октябрь, MCP testing)
+12. **MCP Playground** (ноябрь, несколько реализаций)
+13. **Helicone.ai** (ноябрь, YC W23, Apache 2.0)
+14. **Packmind Open Source** (ноябрь)
 
 **🔍 Дополнительные open source находки:**
 - **AskUI Vision Agent** (основа для Caesr AI, октябрь) - MIT
 - **OpenV0** (альтернатива v0, октябрь)
 - **Open SaaS 2.0** ⭐ 10k+ (октябрь, starter kit)
+- **agor** (ноябрь, Business Source License - не полностью open source)
 
 **⚠️ Требуют уточнения:**
 - **Nora AI** - есть GitHub org, но неясен полный open source статус
 
-**🔧 Open source БЕЗ LLM:** 5
-- **Rybbit** (Google Analytics альтернатива)
-- **Flipt v2** (Feature flags)
-- **OpenStatus** ⭐ 7.9k+ (Uptime monitoring)
-- **TheBoringNotch** (Dynamic Island для Mac)
-- **Nuxt UI v4** (UI library)
+**🔧 Open source БЕЗ LLM:** 6
+- **Rybbit** (октябрь, Google Analytics)
+- **Flipt v2** (октябрь, Feature flags)
+- **OpenStatus** ⭐ 7.9k+ (октябрь, Uptime monitoring)
+- **TheBoringNotch** (октябрь, Dynamic Island для Mac)
+- **Nuxt UI v4** (октябрь, UI library)
+- **Swetrix** (ноябрь, Analytics, AGPL-3.0)
 
 ## Топ проектов по звездам GitHub
 
@@ -705,10 +848,12 @@
 
 ## Категории использования LLM
 
-### 🔄 Workflow Automation & Agents (3 проекта)
+### 🔄 Workflow Automation & Agents (5 проектов)
 - **n8n AI Workflow Builder** - универсальная платформа
 - **Director / Stagehand** - browser automation
-- **Starbase by Metorial** - MCP server testing
+- **Starbase by Metorial** - MCP server testing (октябрь)
+- **MCP Playground** - MCP server testing (ноябрь)
+- **Packmind Open Source** - context engineering для AI agents
 
 ### 🗣️ Voice & Audio AI (2 проекта)
 - **Ito** - voice dictation
@@ -734,32 +879,46 @@
 ### 🧠 Context & Knowledge Management (1 проект)
 - **Glass by Pickle Team** - desktop AI assistant
 
+### 🚪 AI Infrastructure & Gateway (1 проект)
+- **Helicone.ai** - AI gateway, observability platform (YC W23)
+
 ## 📈 Выводы
 
-1. **Октябрь 2025 - прорывной месяц** для open source LLM проектов: найдено **9 основных** + 3 дополнительных проекта
+1. **Проанализировано 245+ проектов** за октябрь и ноябрь 2025, найдено **13 open source LLM проектов**
 
-2. **Workflow automation** остается самой представленной категорией среди open source LLM проектов
+2. **Октябрь 2025 - прорывной месяц**: 9 основных open source LLM проектов
+   **Ноябрь 2025 - фокус на MCP**: 3 новых проекта, все связаны с Model Context Protocol
 
-3. **n8n** (155k ⭐) - безоговорочный лидер по популярности и функциональности
+3. **Workflow automation & MCP** - доминирующая категория (5 проектов):
+   - **MCP Protocol набирает momentum**: Starbase, MCP Playground, Packmind
+   - n8n (155k ⭐) остается лидером по популярности
 
-4. **Новые тренды**:
+4. **Новые тренды October-November 2025**:
+   - 🔌 **MCP (Model Context Protocol) explosion** - 3 новых MCP-focused инструмента в ноябре
    - 🗣️ **Voice AI** набирает обороты (Ito, ElevenLabs UI)
    - 🐍 **Python-first AI tools** (Reflex, nanochat)
-   - 🔌 **MCP (Model Context Protocol)** adoption (n8n, Starbase, Glue)
-   - 🧑‍💻 **AI-native project management** (Plane)
+   - 🚪 **AI Infrastructure** выходит на первый план (Helicone.ai от YC W23)
+   - 🧠 **Context Engineering** становится отдельной дисциплиной (Packmind)
 
-5. **Андрей Карпати** выпустил **nanochat** - минималистичный способ обучить свою LLM за $100
+5. **Важные релизы**:
+   - **Андрей Карпати** выпустил **nanochat** - обучи LLM за $100 за 4 часа
+   - **Helicone.ai** (YC W23) - fastest AI gateway на Rust
+   - **MCP Playground** - "Postman для MCP"
 
 6. **Firecrawl v2.5** - единственный проект, попавший в топ оба месяца
 
-7. Большинство AI code generation инструментов остаются **коммерческими** (Cursor, Orchids, Emergent)
-
-8. Появляются **open source альтернативы** коммерческим продуктам:
-   - Open ChatGPT Atlas → ChatGPT Atlas
+7. **Open source альтернативы коммерческим продуктам**:
+   - Open ChatGPT Atlas → ChatGPT Atlas (OpenAI)
    - OpenV0 → v0 by Vercel
    - Ito → Wispr Flow / Superwhisper
+   - Swetrix → Google Analytics
 
-9. **Разнообразие лицензий**: MIT, Apache 2.0, AGPL-3.0, GPL - каждая служит разным целям сообщества
+8. Большинство AI code generation платформ **остаются коммерческими** (Cursor, Orchids, Emergent)
+   Но **nanochat позволяет обучить свою модель** open source!
+
+9. **Y Combinator активно инвестирует** в open source AI infrastructure (Helicone.ai W23, Plane)
+
+10. **Разнообразие лицензий**: MIT (самая популярная), Apache 2.0 (enterprise-friendly), AGPL-3.0 (copyleft), GPL, Business Source License
 
 ---
 
