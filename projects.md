@@ -1,6 +1,69 @@
-# Open Source LLM Projects from Product Hunt - October & November 2025
+# Open Source LLM Projects from Product Hunt - September, October & November 2025
 
-Анализ проектов из топа Product Hunt за октябрь и ноябрь 2025 года на предмет использования LLM технологий, наличия open source лицензии и публичного GitHub репозитория.
+Анализ проектов из топа Product Hunt за сентябрь, октябрь и ноябрь 2025 года на предмет использования LLM технологий, наличия open source лицензии и публичного GitHub репозитория.
+
+---
+
+# 📅 September 2025 (Краткая справка)
+
+## ✅ Open Source проекты с LLM
+
+### 1. **Kilo Code for JetBrains** ⭐ Apache 2.0
+- **GitHub:** https://github.com/Kilo-Org/kilocode
+- **Описание:** Open source AI coding assistant для VS Code и JetBrains IDEs (420k+ downloads)
+- **Фичи:** Multi-mode (Architect, Coder, Debugger), 400+ LLM models, MCP Server Marketplace
+
+### 2. **GraphBit** 🦀 Rust + Python
+- **GitHub:** https://github.com/InfinitiBit/graphbit
+- **Описание:** Enterprise-grade Agentic AI framework на Rust core с Python wrapper
+- **Фичи:** 68× ниже CPU, 140× меньше memory vs конкуренты, true parallel execution
+
+### 3. **tambo** ⚛️ React
+- **GitHub:** https://github.com/tambo-ai/tambo
+- **Описание:** AI orchestration framework для React с generative UI
+- **Фичи:** MCP support, streaming components, state management
+
+### 4. **Teable 2.0** ⭐ 20k+ | AGPL-3.0
+- **GitHub:** https://github.com/teableio/teable
+- **Описание:** Первый AI Database Agent. No-Code Postgres альтернатива Airtable
+- **Фичи:** Postgres-first, 1M+ rows, AI-powered data actions
+
+### 5. **Ona (formerly Gitpod)**
+- **GitHub:** https://github.com/gitpod-io/gitpod
+- **Описание:** Sandboxed parallel coding agent platform
+- **Фичи:** OS-level isolation, VS Code in browser, 60% PRs co-authored by AI
+
+### 6. **Web to MCP**
+- **GitHub:** https://github.com/Web-to-MCP/mcp-server
+- **Описание:** Browser extension для отправки website components в Cursor/Claude
+- **Фичи:** One-click capture, pixel-perfect references
+
+### 7. **Figma MCP** (несколько реализаций)
+- **GitHub:**
+  - https://github.com/GLips/Figma-Context-MCP
+  - https://github.com/tercumantanumut/sunnysideFigma-Context-MCP (30 tools)
+- **Описание:** MCP servers для интеграции Figma с AI coding agents
+
+### 8. **Recal.dev** (partial open source)
+- **GitHub:** https://github.com/recal-dev/scheduling-sdk
+- **Описание:** Unified Calendar API с MCP support для AI agents
+- **Open source:** TypeScript Scheduling SDK
+
+### 9. **Billing SDK** 💰
+- **GitHub:** https://github.com/dodopayments/billingsdk
+- **Описание:** Modern billing & monetization UI components для React + Tailwind
+
+## 📊 Краткая статистика September 2025
+
+**Всего проверено:** 170+ проектов
+**Open source с LLM:** 9 основных
+**Ключевые тренды:**
+- 🔌 **MCP Protocol везде** - Web to MCP, Figma MCP, Recal MCP
+- 🦀 **Rust для AI** - GraphBit показывает 68-140× улучшение производительности
+- 💻 **AI coding agents** - Kilo Code (420k downloads), Ona (60% AI PRs)
+- 🗄️ **AI Databases** - Teable 2.0 (20k stars)
+
+**Примечание:** Более 90% AI проектов сентября - коммерческие (Cursor, Replit Agent 3, GPT-5 Codex, Notion 3.0, Claude Sonnet 4.5, и др.)
 
 ---
 
@@ -795,27 +858,36 @@
 
 ---
 
-# 📊 Общая статистика (October + November 2025)
+# 📊 Общая статистика (September, October + November 2025)
 
 ## Итоговые цифры
 
-**Всего проверено проектов:** 245+ (160+ октябрь + 85+ ноябрь)
+**Всего проверено проектов:** 415+ (170+ сентябрь + 160+ октябрь + 85+ ноябрь)
 
-**✅ Open source проектов с LLM:** 13 основных
+**✅ Open source проектов с LLM:** 22 основных
 1. **n8n AI Workflow Builder** ⭐ 155k+ (октябрь)
 2. **Firecrawl v2.5** ⭐ 40k+ (октябрь и ноябрь)
 3. **Plane** ⭐ 39.8k+ (октябрь)
 4. **Reflex** ⭐ 27k+ (октябрь)
-5. **Director / Stagehand** ⭐ 17.4k+ (октябрь)
-6. **Glass by Pickle Team** ⭐ 6.9k+ (ноябрь)
-7. **Open ChatGPT Atlas** (октябрь)
-8. **nanochat** (октябрь, by Andrej Karpathy)
-9. **Ito** (октябрь, Voice Dictation)
-10. **ElevenLabs UI** ⭐ 1k+ (октябрь)
-11. **Starbase by Metorial** (октябрь, MCP testing)
-12. **MCP Playground** (ноябрь, несколько реализаций)
-13. **Helicone.ai** (ноябрь, YC W23, Apache 2.0)
-14. **Packmind Open Source** (ноябрь)
+5. **Teable 2.0** ⭐ 20k+ (сентябрь, AGPL-3.0)
+6. **Director / Stagehand** ⭐ 17.4k+ (октябрь)
+7. **Glass by Pickle Team** ⭐ 6.9k+ (ноябрь)
+8. **Kilo Code for JetBrains** (сентябрь, 420k+ downloads)
+9. **Open ChatGPT Atlas** (октябрь)
+10. **nanochat** (октябрь, by Andrej Karpathy)
+11. **GraphBit** (сентябрь, Rust + Python framework)
+12. **tambo** (сентябрь, React orchestration)
+13. **Ito** (октябрь, Voice Dictation)
+14. **ElevenLabs UI** ⭐ 1k+ (октябрь)
+15. **Ona / Gitpod** (сентябрь, sandboxed agents)
+16. **Web to MCP** (сентябрь)
+17. **Figma MCP** (сентябрь, несколько реализаций)
+18. **Recal.dev** (сентябрь, partial open source)
+19. **Billing SDK** (сентябрь)
+20. **Starbase by Metorial** (октябрь, MCP testing)
+21. **MCP Playground** (ноябрь, несколько реализаций)
+22. **Helicone.ai** (ноябрь, YC W23, Apache 2.0)
+23. **Packmind Open Source** (ноябрь)
 
 **🔍 Дополнительные open source находки:**
 - **AskUI Vision Agent** (основа для Caesr AI, октябрь) - MIT
@@ -836,15 +908,16 @@
 
 ## Топ проектов по звездам GitHub
 
-1. 🥇 **n8n AI Workflow Builder** - 155,300+ ⭐
-2. 🥈 **Firecrawl v2.5** - 40,000+ ⭐
-3. 🥉 **Plane** - 39,800+ ⭐
-4. **Reflex** - 27,000+ ⭐
-5. **Director / Stagehand** - 17,400+ ⭐
-6. **Open SaaS 2.0** - 10,000+ ⭐
-7. **OpenStatus** - 7,950+ ⭐
-8. **Glass** - 6,900+ ⭐
-9. **ElevenLabs UI** - 1,000+ ⭐
+1. 🥇 **n8n AI Workflow Builder** - 155,300+ ⭐ (октябрь)
+2. 🥈 **Firecrawl v2.5** - 40,000+ ⭐ (октябрь и ноябрь)
+3. 🥉 **Plane** - 39,800+ ⭐ (октябрь)
+4. **Reflex** - 27,000+ ⭐ (октябрь)
+5. **Teable 2.0** - 20,000+ ⭐ (сентябрь)
+6. **Director / Stagehand** - 17,400+ ⭐ (октябрь)
+7. **Open SaaS 2.0** - 10,000+ ⭐ (октябрь)
+8. **OpenStatus** - 7,950+ ⭐ (октябрь)
+9. **Glass** - 6,900+ ⭐ (ноябрь)
+10. **ElevenLabs UI** - 1,000+ ⭐ (октябрь)
 
 ## Категории использования LLM
 
@@ -884,21 +957,25 @@
 
 ## 📈 Выводы
 
-1. **Проанализировано 245+ проектов** за октябрь и ноябрь 2025, найдено **13 open source LLM проектов**
+1. **Проанализировано 415+ проектов** за сентябрь, октябрь и ноябрь 2025, найдено **22 open source LLM проектов**
 
-2. **Октябрь 2025 - прорывной месяц**: 9 основных open source LLM проектов
-   **Ноябрь 2025 - фокус на MCP**: 3 новых проекта, все связаны с Model Context Protocol
+2. **Динамика по месяцам**:
+   - **Сентябрь 2025 - MCP Protocol зарождение**: 9 open source LLM проектов, из них 6 связаны с MCP
+   - **Октябрь 2025 - прорывной месяц**: 9 основных open source LLM проектов
+   - **Ноябрь 2025 - фокус на MCP инфраструктуре**: 4 новых проекта
 
-3. **Workflow automation & MCP** - доминирующая категория (5 проектов):
-   - **MCP Protocol набирает momentum**: Starbase, MCP Playground, Packmind
+3. **Workflow automation & MCP** - доминирующая категория (8+ проектов):
+   - **MCP Protocol набирает momentum**: Web to MCP, Figma MCP (сентябрь) → Starbase (октябрь) → MCP Playground, Packmind (ноябрь)
    - n8n (155k ⭐) остается лидером по популярности
 
-4. **Новые тренды October-November 2025**:
-   - 🔌 **MCP (Model Context Protocol) explosion** - 3 новых MCP-focused инструмента в ноябре
+4. **Новые тренды September-November 2025**:
+   - 🔌 **MCP (Model Context Protocol) explosion** - стандарт от Anthropic стал ключевым трендом осени
+   - 🦀 **Rust for AI** - новое направление для высокопроизводительных AI инструментов (GraphBit, Helicone.ai)
    - 🗣️ **Voice AI** набирает обороты (Ito, ElevenLabs UI)
-   - 🐍 **Python-first AI tools** (Reflex, nanochat)
+   - 🐍 **Python-first AI tools** (Reflex, nanochat, GraphBit)
    - 🚪 **AI Infrastructure** выходит на первый план (Helicone.ai от YC W23)
    - 🧠 **Context Engineering** становится отдельной дисциплиной (Packmind)
+   - 💻 **AI Coding Agents** для IDE (Kilo Code с 420k+ загрузок)
 
 5. **Важные релизы**:
    - **Андрей Карпати** выпустил **nanochat** - обучи LLM за $100 за 4 часа
