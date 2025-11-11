@@ -98,6 +98,181 @@
 
 ---
 
+### 4. nanochat
+
+**Описание:** Полнофункциональная реализация LLM типа ChatGPT от Андрея Карпати. Minimal, hackable, dependency-lite кодовая база для обучения собственной языковой модели.
+
+**GitHub:** https://github.com/karpathy/nanochat
+
+**Статистика:**
+- 🏆 Проект от легендарного Андрея Карпати
+- 📝 ~8,000 строк кода (Python + немного Rust)
+- ⚡ Обучение за ~4 часа за ~$100
+
+**Лицензия:** Open Source
+
+**Использование LLM:**
+- Полный pipeline: tokenization, pretraining, finetuning, evaluation
+- Inference и web serving для чата с собственной LLM
+- Обучение GPT-подобных моделей с нуля
+- Разные тиры: $100 (базовый), $300 (GPT-2 уровень), $1000 (математика и код)
+
+**Основные возможности:**
+- Минималистичная кодовая база для изучения
+- Обучение на одной ноде 8×H100
+- Полная прозрачность архитектуры
+- ChatGPT-подобный интерфейс
+
+**Product Hunt:** Best of October 2025
+
+---
+
+### 5. Reflex (with Reflex Build)
+
+**Описание:** Full-stack веб-фреймворк на чистом Python с AI-powered генератором приложений. "Prompt to production" - создание production-grade приложений целиком на Python.
+
+**GitHub:** https://github.com/reflex-dev/reflex
+
+**Статистика:**
+- ⭐ 27,000+ звезд на GitHub
+- 🏢 Используется 30% Fortune 500 компаний
+- 📊 1+ миллион созданных приложений
+
+**Лицензия:** Apache License 2.0
+
+**Использование LLM:**
+- **Reflex Build** - AI генератор full-stack приложений
+- Генерация от frontend до backend через промпты
+- Автоматическая интеграция с data sources и APIs
+- AI-powered кастомизация и рефакторинг
+
+**Основные возможности:**
+- Fullstack apps только на Python (без JavaScript)
+- Fast refresh для мгновенных изменений
+- Deploy одной командой
+- Интеграция любых Python пакетов
+
+**Product Hunt:** Best of October 2025
+
+---
+
+### 6. Plane
+
+**Описание:** Open source альтернатива JIRA, Linear, Monday и Asana с AI-native возможностями. Project management platform с встроенными AI features.
+
+**GitHub:** https://github.com/makeplane/plane
+
+**Статистика:**
+- ⭐ 39,800+ звезд на GitHub
+- 🍴 2,900+ форков
+- 🔄 Активное развитие
+
+**Лицензия:** GNU Affero General Public License v3.0 (AGPL-3.0)
+
+**Использование LLM:**
+- **Plane Pages** с AI capabilities
+- Rich text editor с AI-поддержкой
+- AI для организации идей и задач
+- Intelligent insights и analytics
+
+**Основные возможности:**
+- Issues, Cycles, Modules management
+- Real-time analytics и trend visualization
+- Self-hosted с полным контролем данных
+- Mobile app (Flutter/Dart)
+
+**Product Hunt:** Best of October 2025
+
+---
+
+### 7. Ito - Voice Dictation
+
+**Описание:** Open source AI voice assistant для Mac и Windows. "VibeTyping" - умная диктовка, которая понимает контекст и намерения, а не просто транскрибирует слова.
+
+**GitHub:** https://github.com/heyito/ito
+
+**Статистика:**
+- 🆕 Featured на Hacker News
+- 🌍 Multi-platform (Mac, Windows)
+- 🗣️ Работает в любом приложении
+
+**Лицензия:** GNU General Public License (GPL)
+
+**Использование LLM:**
+- AI понимает intent, а не только слова
+- Контекстно-зависимая обработка
+- Умная пунктуация
+- Генерация текста для разных целей (email, код, документы)
+
+**Основные возможности:**
+- Глобальные keyboard shortcuts
+- Real-time transcription
+- Работа в любом приложении
+- Custom dictionary
+- Multi-language support
+
+**Product Hunt:** Best of October 2025
+
+---
+
+### 8. ElevenLabs UI
+
+**Описание:** Open source библиотека React компонентов для создания интерфейсов с ElevenLabs Agents & Audio SDKs. Построена на shadcn/ui.
+
+**GitHub:** https://github.com/elevenlabs/ui
+
+**Статистика:**
+- ⭐ 1,000+ звезд на GitHub
+- ⚡ Быстрая интеграция
+- 🎨 Полная кастомизация
+
+**Лицензия:** MIT License
+
+**Использование LLM:**
+- Компоненты для voice agents
+- AI audio интерфейсы
+- Интеграция с LLM для голосовых агентов
+- Pre-built waveforms, orbs, messages
+
+**Основные возможности:**
+- React компоненты для AI аудио
+- Интеграция через CLI
+- Built on shadcn/ui
+- Production-ready компоненты
+
+**Product Hunt:** Best of October 2025
+
+---
+
+### 9. Starbase by Metorial
+
+**Описание:** Browser-based инструмент для тестирования MCP (Model Context Protocol) серверов с AI chat интеграцией. Упрощает разработку и отладку MCP серверов.
+
+**GitHub:** https://github.com/metorial/starbase
+
+**Статистика:**
+- 🔧 Developer-friendly
+- 🎯 Zero account required
+- 🔒 Secure by default
+
+**Лицензия:** MIT License
+
+**Использование LLM:**
+- Тестирование MCP servers с Claude, GPT-4
+- AI agents с доступом к tools и resources
+- Instant testing без дополнительной настройки
+- Integration gateway для AI agents
+
+**Основные возможности:**
+- Connect к любым remote MCP servers
+- Безопасное управление подключениями
+- Мгновенное тестирование изменений
+- Hosted version на starbase.sh
+
+**Product Hunt:** Best of October 2025
+
+---
+
 ## 🔍 Дополнительные находки (частично open source)
 
 ### AskUI Vision Agent (основа для Caesr AI)
@@ -129,6 +304,75 @@
 **GitHub:** https://github.com/raidendotai/openv0
 
 **Лицензия:** Open Source
+
+---
+
+### Open SaaS 2.0
+
+**Описание:** Free, open-source SaaS app starter для React & Node.js с "superpowers". Full-featured, community-driven starter kit на базе Wasp framework.
+
+**GitHub:** https://github.com/wasp-lang/open-saas
+
+**Статистика:**
+- ⭐ 10,000+ звезд на GitHub
+- 🚀 Тысячи запущенных проектов
+- 💼 From idea to profit за дни
+
+**Лицензия:** Open Source
+
+**Возможные AI features:**
+- Wasp framework поддерживает интеграцию с AI
+- End-to-end Type Safety
+- Background Jobs (для AI tasks)
+- Готовая инфраструктура для добавления AI
+
+**Примечание:** Starter kit с возможностью добавления AI/LLM функций, но не focused на LLM из коробки.
+
+---
+
+## 🆕 Open Source проекты БЕЗ LLM (но полезные)
+
+### Flipt v2 - Feature Flags
+
+**Описание:** Git-native feature management platform. Self-hosted с zero dependencies.
+
+**GitHub:** https://github.com/flipt-io/flipt
+
+**Лицензия:** Open Source
+**Статистика:** Enterprise-ready, zero DB/Redis required
+
+---
+
+### OpenStatus - Uptime Monitoring
+
+**Описание:** Open source synthetic monitoring platform. Uptime & API monitoring as code с status pages.
+
+**GitHub:** https://github.com/openstatusHQ/openstatus
+
+**Лицензия:** AGPL-3.0
+**Статистика:** ⭐ 7,950+ звезд
+
+---
+
+### TheBoringNotch - Dynamic Island для Mac
+
+**Описание:** Open source Dynamic Island для MacBook notch.
+
+**GitHub:** https://github.com/TheBoredTeam/boring.notch
+
+**Лицензия:** Open Source
+**Features:** Music control, calendar, file shelf, battery
+
+---
+
+### Nuxt UI v4
+
+**Описание:** Open source UI library для Vue/Nuxt. 100+ production-ready компонентов.
+
+**GitHub:** https://github.com/nuxt/ui
+
+**Лицензия:** MIT License
+**Статистика:** ⭐ Powered by Reka UI & Tailwind CSS
 
 ---
 
@@ -243,21 +487,34 @@
 
 ## 📊 Итоговая статистика October 2025
 
-**Всего проверено проектов:** 18
+**Всего проверено проектов:** 160+ (полный список из Product Hunt)
 
-**Проектов с AI/LLM функциями:** 14
-- Cursor 2.0, n8n, Nora, Firecrawl, Caesr AI, v0, Lyra, Emergent, PawChamp, Everyday, Director, ChatGPT Atlas, Orchids, Nimo
+**Проектов с AI/LLM функциями:** 20+
+- Cursor 2.0, n8n, Nora, Firecrawl, Caesr AI, v0, Lyra, Emergent, PawChamp, Everyday, Director, ChatGPT Atlas, Orchids, Nimo, nanochat, Reflex, Plane, Ito, ElevenLabs UI, Starbase, и др.
 
-**Open source проектов с LLM:** 3 основных + 2 альтернативы
-- ✅ n8n AI Workflow Builder
-- ✅ Director (Stagehand)
-- ✅ Open ChatGPT Atlas
-- 🔄 Nora AI (требует уточнения)
-- ℹ️ AskUI Vision Agent (фреймворк для Caesr AI)
-- ℹ️ OpenV0 (альтернатива v0)
+**✅ Open source проектов с LLM:** 9 основных
+1. **n8n AI Workflow Builder** ⭐ 155k+
+2. **Director / Stagehand** ⭐ 17.4k+
+3. **Open ChatGPT Atlas**
+4. **nanochat** (by Andrej Karpathy)
+5. **Reflex** (with Reflex Build) ⭐ 27k+
+6. **Plane** (AI-native features) ⭐ 39.8k+
+7. **Ito** (Voice Dictation)
+8. **ElevenLabs UI** ⭐ 1k+
+9. **Starbase by Metorial**
 
-**Open source без LLM:** 1
-- Rybbit
+**🔍 Дополнительные open source находки:**
+- ℹ️ **AskUI Vision Agent** (фреймворк для Caesr AI) - MIT
+- ℹ️ **OpenV0** (альтернатива v0)
+- ℹ️ **Open SaaS 2.0** ⭐ 10k+ (starter kit с AI-ready инфраструктурой)
+- 🔄 **Nora AI** (требует уточнения)
+
+**🔧 Open source БЕЗ LLM (но полезные):** 4
+- **Rybbit** (Google Analytics альтернатива) ⭐
+- **Flipt v2** (Git-native feature flags)
+- **OpenStatus** ⭐ 7.9k+ (Uptime monitoring)
+- **TheBoringNotch** (Dynamic Island для Mac)
+- **Nuxt UI v4** (UI library)
 
 ---
 
@@ -404,61 +661,105 @@
 
 ## Итоговые цифры
 
-**Всего проверено проектов:** 36 (18 октябрь + 18 ноябрь)
+**Всего проверено проектов:** 178+ (160+ октябрь + 18 ноябрь)
 
-**Open source проектов с LLM:** 4 основных
+**✅ Open source проектов с LLM:** 10 основных
 1. **n8n AI Workflow Builder** ⭐ 155k+ (октябрь)
-2. **Director / Stagehand** ⭐ 17.4k+ (октябрь)
-3. **Open ChatGPT Atlas** (октябрь)
-4. **Firecrawl v2.5** ⭐ 40k+ (октябрь и ноябрь)
+2. **Plane** ⭐ 39.8k+ (октябрь)
+3. **Firecrawl v2.5** ⭐ 40k+ (октябрь и ноябрь)
+4. **Reflex** ⭐ 27k+ (октябрь)
+5. **Director / Stagehand** ⭐ 17.4k+ (октябрь)
+6. **Glass by Pickle Team** ⭐ 6.9k+ (ноябрь)
+7. **Open ChatGPT Atlas** (октябрь)
+8. **nanochat** (октябрь, by Andrej Karpathy)
+9. **Ito** (октябрь, Voice Dictation)
+10. **ElevenLabs UI** ⭐ 1k+ (октябрь)
+11. **Starbase by Metorial** (октябрь, MCP testing)
 
-**Дополнительные open source находки:**
-- **Glass by Pickle Team** ⭐ 6.9k+ (связан с ноябрем)
-- **AskUI Vision Agent** (основа для Caesr AI, октябрь)
+**🔍 Дополнительные open source находки:**
+- **AskUI Vision Agent** (основа для Caesr AI, октябрь) - MIT
 - **OpenV0** (альтернатива v0, октябрь)
+- **Open SaaS 2.0** ⭐ 10k+ (октябрь, starter kit)
 
-**Требуют уточнения:**
+**⚠️ Требуют уточнения:**
 - **Nora AI** - есть GitHub org, но неясен полный open source статус
 
-**Open source без LLM:** 1
+**🔧 Open source БЕЗ LLM:** 5
 - **Rybbit** (Google Analytics альтернатива)
+- **Flipt v2** (Feature flags)
+- **OpenStatus** ⭐ 7.9k+ (Uptime monitoring)
+- **TheBoringNotch** (Dynamic Island для Mac)
+- **Nuxt UI v4** (UI library)
 
 ## Топ проектов по звездам GitHub
 
 1. 🥇 **n8n AI Workflow Builder** - 155,300+ ⭐
 2. 🥈 **Firecrawl v2.5** - 40,000+ ⭐
-3. 🥉 **Director / Stagehand** - 17,400+ ⭐
-4. **Glass** - 6,900+ ⭐
+3. 🥉 **Plane** - 39,800+ ⭐
+4. **Reflex** - 27,000+ ⭐
+5. **Director / Stagehand** - 17,400+ ⭐
+6. **Open SaaS 2.0** - 10,000+ ⭐
+7. **OpenStatus** - 7,950+ ⭐
+8. **Glass** - 6,900+ ⭐
+9. **ElevenLabs UI** - 1,000+ ⭐
 
 ## Категории использования LLM
 
-### Workflow Automation & Agents
-- n8n AI Workflow Builder
-- Director / Stagehand
+### 🔄 Workflow Automation & Agents (3 проекта)
+- **n8n AI Workflow Builder** - универсальная платформа
+- **Director / Stagehand** - browser automation
+- **Starbase by Metorial** - MCP server testing
 
-### Data Processing & Web Scraping
-- Firecrawl v2.5
+### 🗣️ Voice & Audio AI (2 проекта)
+- **Ito** - voice dictation
+- **ElevenLabs UI** - voice agent components
 
-### Browser Automation
-- Open ChatGPT Atlas
-- Director / Stagehand
-- AskUI Vision Agent
+### 🌐 Data Processing & Web Scraping (1 проект)
+- **Firecrawl v2.5** - web to LLM-ready data
 
-### Context & Knowledge Management
-- Glass by Pickle Team
+### 🖥️ Browser Automation (2 проекта)
+- **Open ChatGPT Atlas** - AI browser
+- **Director / Stagehand** (также в Automation)
 
-### Code Generation
-- Cursor 2.0 (коммерческий)
-- Orchids (коммерческий)
-- Nora AI (статус уточняется)
+### 💻 Code & App Generation (3 проекта)
+- **Reflex** (with Reflex Build) - Python full-stack apps
+- **nanochat** - train your own LLM
+- **Cursor 2.0** (коммерческий)
+- **Orchids** (коммерческий)
+- **Nora AI** (статус уточняется)
 
-## Выводы
+### 📋 Project Management (1 проект)
+- **Plane** - AI-native PM platform
 
-1. **Workflow automation** - самая представленная категория среди open source LLM проектов
-2. **n8n** - лидер по популярности и функциональности
-3. **Firecrawl** - единственный проект, попавший в топ оба месяца
-4. Большинство AI code generation инструментов остаются **коммерческими**
-5. Появляются **open source альтернативы** коммерческим продуктам (Open ChatGPT Atlas, OpenV0)
+### 🧠 Context & Knowledge Management (1 проект)
+- **Glass by Pickle Team** - desktop AI assistant
+
+## 📈 Выводы
+
+1. **Октябрь 2025 - прорывной месяц** для open source LLM проектов: найдено **9 основных** + 3 дополнительных проекта
+
+2. **Workflow automation** остается самой представленной категорией среди open source LLM проектов
+
+3. **n8n** (155k ⭐) - безоговорочный лидер по популярности и функциональности
+
+4. **Новые тренды**:
+   - 🗣️ **Voice AI** набирает обороты (Ito, ElevenLabs UI)
+   - 🐍 **Python-first AI tools** (Reflex, nanochat)
+   - 🔌 **MCP (Model Context Protocol)** adoption (n8n, Starbase, Glue)
+   - 🧑‍💻 **AI-native project management** (Plane)
+
+5. **Андрей Карпати** выпустил **nanochat** - минималистичный способ обучить свою LLM за $100
+
+6. **Firecrawl v2.5** - единственный проект, попавший в топ оба месяца
+
+7. Большинство AI code generation инструментов остаются **коммерческими** (Cursor, Orchids, Emergent)
+
+8. Появляются **open source альтернативы** коммерческим продуктам:
+   - Open ChatGPT Atlas → ChatGPT Atlas
+   - OpenV0 → v0 by Vercel
+   - Ito → Wispr Flow / Superwhisper
+
+9. **Разнообразие лицензий**: MIT, Apache 2.0, AGPL-3.0, GPL - каждая служит разным целям сообщества
 
 ---
 
