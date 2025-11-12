@@ -1,6 +1,56 @@
-# Open Source LLM Projects from Product Hunt - July, August, September, October & November 2025
+# Open Source LLM Projects from Product Hunt - June, July, August, September, October & November 2025
 
-Анализ проектов из топа Product Hunt за июль, август, сентябрь, октябрь и ноябрь 2025 года на предмет использования LLM технологий, наличия open source лицензии и публичного GitHub репозитория.
+Анализ проектов из топа Product Hunt за июнь, июль, август, сентябрь, октябрь и ноябрь 2025 года на предмет использования LLM технологий, наличия open source лицензии и публичного GitHub репозитория.
+
+---
+
+# 📅 June 2025 (Краткая справка)
+
+## ✅ Open Source проекты с LLM
+
+### 1. **Gemini CLI** ⭐ 34k+ | Apache 2.0
+- **GitHub:** https://github.com/google-gemini/gemini-cli
+- **Описание:** Open-source AI agent от Google для терминала
+- **Фичи:** 1M token context window, headless mode, GitHub Actions integration, 60 req/min free tier
+
+### 2. **Dyad** | Apache 2.0
+- **GitHub:** https://github.com/dyad-sh/dyad
+- **Описание:** Free, local, open-source AI app builder (альтернатива v0/Lovable/Bolt)
+- **Фичи:** Local execution, any AI model support, React/Next.js/mobile, GitHub integration
+
+### 3. **NativeMind** | AGPL-3.0
+- **GitHub:** https://github.com/NativeMindBrowser/NativeMindExtension
+- **Описание:** Fully private, on-device AI assistant (browser extension на Ollama)
+- **Фичи:** 100% privacy, chat with PDFs/images, Deepseek/Qwen/Llama support, offline-first
+
+### 4. **Hugging Face AISheets** | Open Source
+- **GitHub:** https://github.com/huggingface/aisheets
+- **Описание:** AI-powered spreadsheets с no-code инструментами
+- **Фичи:** Thousands of open models, browser + self-host, cell-level AI enrichment
+
+### 5. **FLUX.1 Kontext** | Non-commercial License
+- **GitHub:** https://github.com/black-forest-labs/flux
+- **Описание:** Open-source in-context AI image editing (12B params)
+- **Фичи:** Character preservation, iterative editing, ComfyUI integration, consumer hardware
+
+### 6. **Twenty CRM** + **MCP Servers** | Open Source
+- **GitHub:** https://github.com/twentyhq/twenty + MCP servers
+- **Описание:** #1 open-source CRM с Model Context Protocol integration
+- **Фичи:** Natural language CRM operations via Claude/AI, CRUD via MCP, custom fields auto-discovery
+
+## 📊 Краткая статистика June 2025
+
+**Всего проверено:** 160+ проектов
+**Open source с LLM:** 6 основных
+**Ключевые тренды:**
+- 🤖 **Google в open source** - Gemini CLI (34k⭐), Apache 2.0, terminal-first AI от Google
+- 🔒 **Privacy-first AI** - NativeMind (on-device, AGPL-3.0), 100% local processing
+- 🎨 **AI Image Editing** - FLUX.1 Kontext (12B params, open-weight model)
+- 📊 **AI Spreadsheets** - Hugging Face AISheets (no-code, thousands of models)
+- 🏗️ **Local AI Builders** - Dyad (альтернатива Bolt/Lovable, Apache 2.0)
+- 🔌 **MCP Integration** - Twenty CRM + MCP servers для AI-native CRM
+
+**Особенность июня:** Выход Cursor 1.0 (коммерческий), Warp 2.0 (частично open source планируется), и сильный фокус на privacy + local AI.
 
 ---
 
@@ -1009,58 +1059,64 @@
 
 ---
 
-# 📊 Общая статистика (July, August, September, October + November 2025)
+# 📊 Общая статистика (June, July, August, September, October + November 2025)
 
 ## Итоговые цифры
 
-**Всего проверено проектов:** 605+ (70+ июль + 120+ август + 170+ сентябрь + 160+ октябрь + 85+ ноябрь)
+**Всего проверено проектов:** 765+ (160+ июнь + 70+ июль + 120+ август + 170+ сентябрь + 160+ октябрь + 85+ ноябрь)
 
-**✅ Open source проектов с LLM:** 44 основных
+**✅ Open source проектов с LLM:** 50 основных
 1. **n8n AI Workflow Builder** ⭐ 155k+ (октябрь)
 2. **Firecrawl v2.5** ⭐ 40k+ (октябрь и ноябрь)
 3. **Plane** ⭐ 39.8k+ (октябрь)
-4. **opencode** ⭐ 30k+ (июль, SST team, 300k+ developers)
-5. **Reflex** ⭐ 27k+ (октябрь)
-6. **Teable 2.0** ⭐ 20k+ (сентябрь, AGPL-3.0)
-7. **ChartDB v2** ⭐ 19.8k+ (август, AGPL-3.0)
-8. **Director / Stagehand** ⭐ 17.4k+ (октябрь)
-9. **Onlook** ⭐ 8.5k+ (август, Apache 2.0, YC)
-10. **Glass by Pickle Team** ⭐ 6.9k+ (ноябрь)
-11. **Kilo Code for JetBrains** (сентябрь, 420k+ downloads)
-12. **Kimi K2** (июль, 1T params MoE от Moonshot AI)
-13. **OpenAI Open Models (gpt-oss)** (август, Apache 2.0)
-14. **DeepSeek-V3.1** (август, MIT License)
-15. **Grok 2.5 OSS** (август, xAI)
-16. **TensorZero** (август, $7.3M seed, Apache 2.0)
-17. **mcp-use** (август, SDK для MCP)
-18. **stagewise** (август, YC S25)
-19. **Omnara** (август, Apache 2.0, YC S25)
-20. **Cipher by Byterover** (август, Elastic License 2.0)
-21. **Agent S / OpenACI** (август, Apache 2.0)
-22. **Jaaz** (август, Magic Canvas Agent)
-23. **AI Elements by Vercel** (август)
-24. **Ollama App** (август)
-25. **Stream Vision Agents** (июль, open source video+audio AI)
-26. **Intervo** (июль, MIT License, conversational AI)
-27. **Trae Agent** (июль, ByteDance Context Engineer)
-28. **Droidrun** (июль, MIT, mobile AI control)
-29. **21st.dev 2.0** (июль, open source + magic-mcp)
-30. **Kombai** (июль, partial open source)
-31. **Open ChatGPT Atlas** (октябрь)
-32. **nanochat** (октябрь, by Andrej Karpathy)
-33. **GraphBit** (сентябрь, Rust + Python framework)
-34. **tambo** (сентябрь, React orchestration)
-35. **Ito** (октябрь, Voice Dictation)
-36. **ElevenLabs UI** ⭐ 1k+ (октябрь)
-37. **Ona / Gitpod** (сентябрь, sandboxed agents)
-38. **Web to MCP** (сентябрь)
-39. **Figma MCP** (сентябрь, несколько реализаций)
-40. **Recal.dev** (сентябрь, partial open source)
-41. **Billing SDK** (сентябрь)
-42. **Starbase by Metorial** (октябрь, MCP testing)
-43. **MCP Playground** (ноябрь, несколько реализаций)
-44. **Helicone.ai** (ноябрь, YC W23, Apache 2.0)
-45. **Packmind Open Source** (ноябрь)
+4. **Gemini CLI** ⭐ 34k+ (июнь, Apache 2.0, Google)
+5. **opencode** ⭐ 30k+ (июль, SST team, 300k+ developers)
+6. **Reflex** ⭐ 27k+ (октябрь)
+7. **Teable 2.0** ⭐ 20k+ (сентябрь, AGPL-3.0)
+8. **ChartDB v2** ⭐ 19.8k+ (август, AGPL-3.0)
+9. **Director / Stagehand** ⭐ 17.4k+ (октябрь)
+10. **Onlook** ⭐ 8.5k+ (август, Apache 2.0, YC)
+11. **Glass by Pickle Team** ⭐ 6.9k+ (ноябрь)
+12. **Kilo Code for JetBrains** (сентябрь, 420k+ downloads)
+13. **Kimi K2** (июль, 1T params MoE от Moonshot AI)
+14. **Dyad** (июнь, Apache 2.0, local AI app builder)
+15. **NativeMind** (июнь, AGPL-3.0, on-device AI assistant)
+16. **Hugging Face AISheets** (июнь, open source, AI spreadsheets)
+17. **FLUX.1 Kontext** (июнь, 12B params, image editing)
+18. **Twenty CRM + MCP Servers** (июнь, open source, MCP integration)
+19. **OpenAI Open Models (gpt-oss)** (август, Apache 2.0)
+20. **DeepSeek-V3.1** (август, MIT License)
+21. **Grok 2.5 OSS** (август, xAI)
+22. **TensorZero** (август, $7.3M seed, Apache 2.0)
+23. **mcp-use** (август, SDK для MCP)
+24. **stagewise** (август, YC S25)
+25. **Omnara** (август, Apache 2.0, YC S25)
+26. **Cipher by Byterover** (август, Elastic License 2.0)
+27. **Agent S / OpenACI** (август, Apache 2.0)
+28. **Jaaz** (август, Magic Canvas Agent)
+29. **AI Elements by Vercel** (август)
+30. **Ollama App** (август)
+31. **Stream Vision Agents** (июль, open source video+audio AI)
+32. **Intervo** (июль, MIT License, conversational AI)
+33. **Trae Agent** (июль, ByteDance Context Engineer)
+34. **Droidrun** (июль, MIT, mobile AI control)
+35. **21st.dev 2.0** (июль, open source + magic-mcp)
+36. **Kombai** (июль, partial open source)
+37. **Open ChatGPT Atlas** (октябрь)
+38. **nanochat** (октябрь, by Andrej Karpathy)
+39. **GraphBit** (сентябрь, Rust + Python framework)
+40. **tambo** (сентябрь, React orchestration)
+41. **Ito** (октябрь, Voice Dictation)
+42. **ElevenLabs UI** ⭐ 1k+ (октябрь)
+43. **Ona / Gitpod** (сентябрь, sandboxed agents)
+44. **Web to MCP** (сентябрь)
+45. **Figma MCP** (сентябрь, несколько реализаций)
+46. **Recal.dev** (сентябрь, partial open source)
+47. **Billing SDK** (сентябрь)
+48. **Starbase by Metorial** (октябрь, MCP testing)
+49. **MCP Playground** (ноябрь, несколько реализаций)
+50. **Helicone.ai** (ноябрь, YC W23, Apache 2.0)
+51. **Packmind Open Source** (ноябрь)
 
 **🔍 Дополнительные open source находки:**
 - **AskUI Vision Agent** (основа для Caesr AI, октябрь) - MIT
@@ -1084,16 +1140,17 @@
 1. 🥇 **n8n AI Workflow Builder** - 155,300+ ⭐ (октябрь)
 2. 🥈 **Firecrawl v2.5** - 40,000+ ⭐ (октябрь и ноябрь)
 3. 🥉 **Plane** - 39,800+ ⭐ (октябрь)
-4. **opencode** - 30,000+ ⭐ (июль, SST team)
-5. **Reflex** - 27,000+ ⭐ (октябрь)
-6. **Teable 2.0** - 20,000+ ⭐ (сентябрь)
-7. **ChartDB v2** - 19,800+ ⭐ (август)
-8. **Director / Stagehand** - 17,400+ ⭐ (октябрь)
-9. **Open SaaS 2.0** - 10,000+ ⭐ (октябрь)
-10. **Onlook** - 8,500+ ⭐ (август)
-11. **OpenStatus** - 7,950+ ⭐ (октябрь)
-12. **Glass** - 6,900+ ⭐ (ноябрь)
-13. **ElevenLabs UI** - 1,000+ ⭐ (октябрь)
+4. **Gemini CLI** - 34,000+ ⭐ (июнь, Google, Apache 2.0)
+5. **opencode** - 30,000+ ⭐ (июль, SST team)
+6. **Reflex** - 27,000+ ⭐ (октябрь)
+7. **Teable 2.0** - 20,000+ ⭐ (сентябрь)
+8. **ChartDB v2** - 19,800+ ⭐ (август)
+9. **Director / Stagehand** - 17,400+ ⭐ (октябрь)
+10. **Open SaaS 2.0** - 10,000+ ⭐ (октябрь)
+11. **Onlook** - 8,500+ ⭐ (август)
+12. **OpenStatus** - 7,950+ ⭐ (октябрь)
+13. **Glass** - 6,900+ ⭐ (ноябрь)
+14. **ElevenLabs UI** - 1,000+ ⭐ (октябрь)
 
 ## Категории использования LLM
 
@@ -1133,9 +1190,10 @@
 
 ## 📈 Выводы
 
-1. **Проанализировано 605+ проектов** за июль, август, сентябрь, октябрь и ноябрь 2025, найдено **44 open source LLM проектов**
+1. **Проанализировано 765+ проектов** за июнь, июль, август, сентябрь, октябрь и ноябрь 2025, найдено **50 open source LLM проектов**
 
 2. **Динамика по месяцам**:
+   - **Июнь 2025 - Privacy & Local AI**: 6 open source LLM проектов, включая Gemini CLI от Google (34k⭐), privacy-first решения (NativeMind, Dyad)
    - **Июль 2025 - Developer Tools & Agentic Models**: 8 open source LLM проектов, включая opencode (30k⭐, 300k devs), Kimi K2 (1T params), первый video-first AI SDK
    - **Август 2025 - Open-weight революция**: 14 open source LLM проектов, включая первые open-weight модели от OpenAI, xAI и DeepSeek
    - **Сентябрь 2025 - MCP Protocol зарождение**: 9 open source LLM проектов, из них 6 связаны с MCP
@@ -1146,7 +1204,12 @@
    - **MCP Protocol набирает momentum**: mcp-use SDK (август) → Web to MCP, Figma MCP (сентябрь) → Starbase (октябрь) → MCP Playground, Packmind (ноябрь)
    - n8n (155k ⭐) остается лидером по популярности
 
-4. **Новые тренды July-November 2025**:
+4. **Новые тренды June-November 2025**:
+   - 🔒 **Privacy-first AI Revolution** - NativeMind (AGPL-3.0, 100% on-device), Dyad (local AI builder), фокус на приватность
+   - 🤖 **Google входит в open source** - Gemini CLI (34k⭐, Apache 2.0), 1M token context window
+   - 🎨 **AI Image Editing** - FLUX.1 Kontext (12B params, open-weight, consumer hardware)
+   - 📊 **AI Spreadsheets** - Hugging Face AISheets (thousands of models, no-code)
+   - 🔌 **MCP Integration с CRM** - Twenty CRM + MCP servers для natural language operations
    - 💻 **Terminal-first AI Revolution** - opencode (30k⭐, 300k developers, SST), provider-agnostic подход к LLM
    - 🎥 **Video-first AI Agents** - Stream Vision Agents (первый video-first SDK, <30ms latency)
    - 📱 **Mobile AI Control** - Droidrun (MIT, native control физических Android/iOS устройств)
@@ -1164,6 +1227,13 @@
    - 🐍 **Python-first AI tools** (Reflex, nanochat, GraphBit)
 
 5. **Важные релизы**:
+   - **Gemini CLI (июнь)** - 34k⭐, Google выпустил open-source AI agent под Apache 2.0
+   - **Cursor 1.0 (июнь)** - коммерческий релиз с Bugbot, Background Agent, MCP setup
+   - **Warp 2.0 (июнь)** - первая Agentic Development Environment (ADE)
+   - **NativeMind (июнь)** - AGPL-3.0, fully private on-device AI assistant на Ollama
+   - **Dyad (июнь)** - Apache 2.0, local альтернатива v0/Lovable/Bolt
+   - **FLUX.1 Kontext (июнь)** - 12B params open-weight модель для image editing
+   - **Hugging Face AISheets (июнь)** - open source AI spreadsheets с no-code tools
    - **opencode (июль)** - 30k⭐, 300k+ developers, provider-agnostic terminal AI agent от SST team
    - **Kimi K2 (июль)** - Moonshot AI выпустил 1T parameter MoE модель для agentic intelligence
    - **Stream Vision Agents (июль)** - первый video-first open-source SDK для real-time AI
@@ -1181,6 +1251,12 @@
 6. **Firecrawl v2.5** - единственный проект, попавший в топ несколько месяцев (октябрь + ноябрь)
 
 7. **Open source альтернативы коммерческим продуктам**:
+   - Gemini CLI → Claude Code CLI, другие AI terminal tools (но от Google!)
+   - Dyad → Bolt.new, Lovable, v0 (local-first!)
+   - NativeMind → ChatGPT, Claude Desktop (100% privacy, on-device)
+   - Hugging Face AISheets → commercial AI spreadsheet tools
+   - FLUX.1 Kontext → Midjourney, Firefly для image editing
+   - Twenty CRM + MCP → Salesforce, HubSpot (с AI через MCP)
    - opencode → Cursor CLI, Aider, другие terminal AI agents (но provider-agnostic!)
    - Kombai → Figma-to-code коммерческие сервисы
    - 21st.dev → Component marketplace проприетарные платформы
@@ -1213,5 +1289,5 @@
 
 ---
 
-*Финальное обновление: 12 ноября 2025 (добавлен июль 2025)*
-*Источники: Product Hunt Leaderboards - Best of July, August, September, October & November 2025*
+*Финальное обновление: 12 ноября 2025 (добавлен июнь 2025)*
+*Источники: Product Hunt Leaderboards - Best of June, July, August, September, October & November 2025*
