@@ -148,3 +148,96 @@ You are Cline, a highly skilled software engineer with extensive knowledge in ma
 
 ---
 
+## Capabilities Prompts
+
+### 2. CAPABILITIES - Возможности агента
+
+**Файл:** `src/core/prompts/system-prompt/components/capabilities.ts`
+
+**Назначение:** Описывает все доступные агенту возможности и инструменты. Этот промпт информирует AI о том, что он может делать и какие инструменты доступны для выполнения задач.
+
+**Когда используется:**
+- В составе каждого системного промпта
+- Перед началом выполнения задач, чтобы агент знал свои возможности
+- Может быть расширен дополнительными возможностями через MCP серверы
+
+**Промпт:**
+
+#### Основные возможности
+
+```
+You can execute CLI commands on the user's computer, list files, view source code definitions,
+perform regex searches, and read and edit files on the user's computer.
+
+When you start a task, you receive a recursive file structure overview showing all directories
+and files in the project.
+```
+
+#### Инструменты для работы с файлами
+
+```
+- list_files: Recursively explore directories when passing 'true' for recursive parameter
+
+- search_files: Perform regex queries across files with contextual results
+
+- list_code_definition_names: Provides an overview of source code definitions for all files
+  at the top level of specified directories
+```
+
+#### Выполнение команд
+
+```
+- execute_command: Runs CLI commands with support for interactive and long-running commands
+  in the VSCode terminal
+```
+
+#### Браузерные возможности (условно)
+
+```
+When browser support is enabled:
+- browser_action: Interact with websites through Puppeteer for web development tasks including
+  navigation, element interaction, screenshots, and console log analysis
+```
+
+#### MCP серверы
+
+```
+You can leverage MCP servers that may provide different capabilities for enhanced task completion.
+```
+
+**Контекст применения:**
+
+Этот промпт создает понимание у агента о доступных возможностях:
+
+1. **Файловые операции:**
+   - Чтение и запись файлов
+   - Рекурсивный просмотр директорий
+   - Поиск по регулярным выражениям
+   - Просмотр определений кода
+
+2. **Выполнение команд:**
+   - CLI команды в терминале VS Code
+   - Поддержка интерактивных команд
+   - Длительные операции
+
+3. **Браузерная автоматизация:**
+   - Навигация по веб-страницам
+   - Взаимодействие с элементами
+   - Создание скриншотов
+   - Анализ console logs
+
+4. **Расширяемость:**
+   - Интеграция с MCP серверами для дополнительных возможностей
+
+**Особенности:**
+- Динамически включает секции в зависимости от доступных возможностей
+- Browser support включается только если browser_action tool доступен
+- MCP capabilities добавляются динамически из подключенных серверов
+
+**Связанные компоненты:**
+- TOOL_USE - детальное описание использования инструментов
+- MCP - интеграция с Model Context Protocol серверами
+- RULES - ограничения на использование возможностей
+
+---
+
