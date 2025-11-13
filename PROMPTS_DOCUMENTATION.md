@@ -705,3 +705,371 @@ STRATEGIC RECOMMENDATIONS:
 
 ---
 
+## Tools Specifications
+
+### 13. Available Tools - Доступные инструменты
+
+**Файл:** `src/core/prompts/system-prompt/spec.ts` и `registry/ClineToolSet.ts`
+
+#### Список основных инструментов
+
+1. **execute_command** / **bash**
+   - Выполнение CLI команд в терминале VS Code
+   - Поддержка интерактивных и long-running команд
+
+2. **read_file**
+   - Чтение содержимого файлов
+   - Поддержка различных форматов
+
+3. **write_to_file**
+   - Создание новых файлов
+   - Полная замена содержимого существующих файлов
+
+4. **replace_in_file**
+   - Точечное редактирование файлов
+   - Diff-style SEARCH/REPLACE блоки
+
+5. **list_files**
+   - Рекурсивный просмотр директорий
+   - Получение структуры проекта
+
+6. **search_files**
+   - Поиск по регулярным выражениям
+   - Контекстные результаты поиска
+
+7. **list_code_definition_names**
+   - Обзор определений кода
+   - Анализ структуры файлов
+
+8. **browser_action** (условно)
+   - Автоматизация браузера через Puppeteer
+   - Навигация, взаимодействие, скриншоты
+
+9. **fetch**
+   - Загрузка данных из URL
+   - HTTP запросы
+
+10. **use_mcp_tool**
+    - Использование инструментов MCP серверов
+    - Динамические параметры
+
+11. **access_mcp_resource**
+    - Доступ к ресурсам MCP серверов
+    - URI-based доступ
+
+12. **ask_followup_question**
+    - Задать уточняющий вопрос пользователю
+    - Получение дополнительной информации
+
+13. **attempt_completion**
+    - Завершение задачи
+    - Предоставление результата
+
+14. **new_task**
+    - Создание новой задачи с контекстом
+    - Сохранение текущего прогресса
+
+15. **plan_mode_respond**
+    - Ответ в режиме планирования
+    - Представление плана пользователю
+
+16. **ask_docs**
+    - Обращение к документации
+    - Поиск справочной информации
+
+17. **update_task_todo** (Next-Gen)
+    - Обновление todo списка задачи
+    - Отслеживание прогресса
+
+#### Tool Specification Interface
+
+```typescript
+interface ClineToolSpec {
+  variant: string                          // Вариант промпта
+  id: string                               // Уникальный ID
+  name: string                             // Имя инструмента
+  description: string                      // Описание назначения
+  instructions?: string                    // Дополнительные инструкции
+  includeIf?: (context) => boolean        // Условие включения
+  parameters: ClineToolSpecParameter[]     // Параметры инструмента
+}
+
+interface ClineToolSpecParameter {
+  name: string                             // Имя параметра
+  type: "string" | "boolean" | "integer" | "array" | "object"
+  description: string                      // Описание параметра
+  required: boolean                        // Обязательный ли
+  includeIf?: (context) => boolean        // Условие включения
+  dependsOn?: string                       // Зависимость от другого параметра
+}
+```
+
+#### Конвертация для разных провайдеров
+
+- **OpenAI**: `toolSpecFunctionDefinition()` - ChatCompletionTool формат
+- **Anthropic**: `toolSpecInputSchema()` - Tool definitions
+- **Google Gemini**: `toolSpecFunctionDeclarations()` - Function declarations
+- **MCP Tools**: `mcpToolToClineToolSpec()` - Конвертация MCP в Cline формат
+
+#### Tool Set Management
+
+Класс `ClineToolSet` управляет инструментами:
+
+```typescript
+class ClineToolSet {
+  // Регистрация инструмента
+  register(variantId, tool): void
+
+  // Получение инструментов с fallback
+  getTools(variantId): ClineToolSpec[]
+
+  // Поиск инструмента по имени
+  getToolByName(variantId, toolName): ClineToolSpec | undefined
+
+  // Фильтрация по контексту
+  getEnabledTools(variantId, context): ClineToolSpec[]
+
+  // Конвертация для провайдеров
+  getNativeTools(variant, context): NativeToolDefinition[]
+}
+```
+
+**Иерархия fallback:**
+1. Точный вариант
+2. GENERIC вариант
+3. Любой доступный вариант
+
+---
+
+## Prompt Variants
+
+### 14. Варианты промптов для разных моделей
+
+**Файл:** `src/core/prompts/system-prompt/variants/`
+
+#### 14.1 GENERIC - Базовый вариант
+
+**Файл:** `variants/generic/config.ts`
+
+**Характеристики:**
+- **Model Family**: GENERIC
+- **Version**: 1
+- **Назначение**: Fallback конфигурация для любых моделей
+
+**Matcher логика:**
+```typescript
+// Применяется к моделям, которые:
+- Не имеют provider или model ID информации, ИЛИ
+- Не являются локальными моделями с compact prompts, ИЛИ
+- Не являются next-generation моделями, ИЛИ
+- Не являются GLM-family моделями
+```
+
+**Секции промпта (13):**
+1. Agent role
+2. Tool use guidance
+3. Task progress
+4. MCP integration
+5. File editing
+6. Plan vs execution
+7. CLI subagents
+8. Capabilities
+9. Rules
+10. System info
+11. Objectives
+12. User instructions
+13. Feedback
+
+**Инструменты (16):**
+bash, read_file, write_to_file, replace_in_file, list_files, search_files,
+list_code_definition_names, browser_action, fetch, use_mcp_tool, access_mcp_resource,
+ask_followup_question, attempt_completion, new_task, plan_mode_respond, ask_docs
+
+---
+
+#### 14.2 NEXT_GEN - Продвинутые модели
+
+**Файл:** `variants/next-gen/config.ts`
+
+**Характеристики:**
+- **Model Family**: NEXT_GEN
+- **Version**: 1
+- **Tags**: "next-gen", "advanced", "production"
+- **Назначение**: Оптимизация для frontier моделей с enhanced agentic capabilities
+
+**Matcher логика:**
+```typescript
+// Применяется к:
+- Next-gen model family без native tool calls
+- Исключает compact prompts на локальных моделях
+- Исключает next-gen providers с определенными условиями
+- Избегает GPT-5 non-chat вариантов
+```
+
+**Секции промпта (13):**
+Те же, что у GENERIC
+
+**Инструменты (17):**
+Все из GENERIC + `update_task_todo` - обновление todo списка
+
+**Особенности:**
+- Sophisticated multi-tool orchestration
+- Suited for complex autonomous reasoning tasks
+- Compile-time validation с strict mode
+
+---
+
+#### 14.3 XS - Компактный вариант
+
+**Файл:** `variants/xs/config.ts`
+
+**Характеристики:**
+- **Model Family**: XS
+- **Version**: 1
+- **Tags**: "local", "xs", "compact"
+- **Назначение**: Для моделей с малым контекстом
+
+**Matcher логика:**
+```typescript
+// Применяется к:
+- Custom prompt set = "compact"
+- AND local model provider
+```
+
+**Секции промпта (9) - сокращенный набор:**
+1. Agent role
+2. Rules
+3. Act vs plan
+4. CLI subagents
+5. Capabilities
+6. Editing files
+7. Objective
+8. System info
+9. User instructions
+
+**Инструменты (10) - минимальный набор:**
+bash, read_file, write_to_file, replace_in_file, search_files, list_files,
+ask_followup_question, attempt_completion, new_task, plan_mode_respond
+
+**Особенности:**
+- Compact footprint для малого контекста
+- Compile-time validation
+- Component overrides применяются post-build
+
+---
+
+#### 14.4 Другие варианты
+
+**Доступные варианты:**
+- **gpt-5/** - Специфичный для GPT-5
+- **native-gpt-5/** - Native tool calls для GPT-5
+- **native-gpt-5-1/** - Версия 1 native GPT-5
+- **native-next-gen/** - Native tool calls для next-gen
+- **glm/** - Для GLM моделей
+- **hermes/** - Для Hermes моделей
+
+#### Variant Registry
+
+**Файл:** `registry/PromptRegistry.ts`
+
+Singleton управляющий system prompts:
+
+```typescript
+class PromptRegistry {
+  // Получает matched prompt с native tools
+  get(context): { prompt, nativeTools }
+
+  // Доступ к специфичной версии
+  getVersion(modelId, version): PromptVariant
+
+  // Поиск по semantic labels
+  getByTag(tag): PromptVariant[]
+
+  // Список зарегистрированных моделей
+  getAvailableModels(): string[]
+
+  // Добавляет переиспользуемый компонент
+  registerComponent(name, component): void
+}
+```
+
+**Variant Matching стратегии:**
+1. Model family detection через matcher functions
+2. Fallback к generic variant если нет совпадения
+3. Version-specific retrieval через `modelId@version` keys
+4. Tag и label-based lookup
+
+---
+
+## Заключение
+
+### Ключевые особенности системы промптов Cline:
+
+1. **Модульность**
+   - Переиспользуемые компоненты
+   - Композиция через builder pattern
+   - Dependency injection через context
+
+2. **Адаптивность**
+   - Варианты для разных моделей
+   - Контекстная фильтрация
+   - Graceful degradation
+
+3. **Расширяемость**
+   - Plugin система для компонентов
+   - MCP integration
+   - Custom tool definitions
+
+4. **Надежность**
+   - Compile-time validation
+   - Runtime error handling
+   - Fallback mechanisms
+
+5. **Оптимизация**
+   - Model-specific prompts
+   - Compact варианты для малого контекста
+   - Efficient template resolution
+
+### Workflow процесс:
+
+```
+User Request
+    ↓
+Context Analysis → Variant Selection
+    ↓
+Component Assembly → Placeholder Resolution
+    ↓
+Template Rendering → Post-Processing
+    ↓
+Final System Prompt → AI Model
+    ↓
+Tool Execution → Response Formatting
+    ↓
+User Output
+```
+
+### Статистика:
+
+- **Компоненты**: ~14 файлов
+- **Варианты**: 9+ директорий
+- **Инструменты**: 17+ определений
+- **Утилиты**: ~10+ helper functions
+- **Общий размер базового промпта**: ~11,747 tokens
+
+---
+
+## Дополнительные ресурсы
+
+- **Репозиторий**: [github.com/cline/cline](https://github.com/cline/cline)
+- **Документация**: [docs.cline.bot](https://docs.cline.bot)
+- **Промпты**: `/src/core/prompts/`
+- **System Prompt**: `/src/core/prompts/system-prompt/`
+- **Варианты**: `/src/core/prompts/system-prompt/variants/`
+- **Инструменты**: `/src/core/prompts/system-prompt/registry/tools/`
+
+---
+
+*Анализ выполнен: 2025-11-13*
+*Версия репозитория: main branch*
+*Документация создана на основе исходного кода Cline*
+
