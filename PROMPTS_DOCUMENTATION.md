@@ -241,3 +241,107 @@ You can leverage MCP servers that may provide different capabilities for enhance
 
 ---
 
+## Workflow Prompts
+
+### 3. OBJECTIVE - Цели и подход к задачам
+
+**Файл:** `src/core/prompts/system-prompt/components/objective.ts`
+
+**Назначение:** Определяет методологию выполнения задач агентом - итеративный подход с разбиением на шаги.
+
+**Промпт:**
+
+```
+You accomplish a given task iteratively, breaking it down into clear steps and working through
+them methodically.
+
+1. Task Analysis - Decompose user requests into prioritized, logical goals
+2. Sequential Execution - Work through goals one at a time, utilizing available tools as needed
+3. Thoughtful Tool Selection - Before invoking any tool, analyze file structures and determine
+   the most relevant tool for the task, verifying all required parameters are present or
+   reasonably inferable
+4. Completion Protocol - Use attempt_completion tool to deliver results and optionally provide
+   CLI commands
+5. Iteration - Accept user feedback for refinement without prolonging unnecessary dialogue
+
+IMPORTANT: Do NOT continue in pointless back and forth conversations. Don't end your responses
+with questions or offers for further assistance.
+```
+
+**Особенности:**
+- Включает логику "yolo mode" для автоматического вывода параметров
+- Акцент на итеративном подходе без лишних диалогов
+- Определяет 5-шаговый процесс выполнения задач
+
+---
+
+### 4. ACT_VS_PLAN_MODE - Режимы работы
+
+**Файл:** `src/core/prompts/system-prompt/components/act_vs_plan_mode.ts`
+
+**Назначение:** Объясняет два режима работы агента - планирование и выполнение.
+
+**Промпт:**
+
+```
+You have two operational modes:
+
+ACT MODE: Grants full tool access except for plan_mode_respond. You use available tools
+to complete tasks and signal completion via the attempt_completion tool.
+
+PLAN MODE: Provides access to the plan_mode_respond tool specifically. This mode enables
+collaborative planning where you:
+- Gather context using read_file or search_files
+- Ask clarifying questions (unless YOLO mode is enabled)
+- Present structured plans for user review
+- Discuss and refine approaches interactively
+
+You transition to ACT MODE only after user approval of the plan.
+```
+
+**Когда используется:**
+- **Plan Mode**: При старте новой задачи для обсуждения плана
+- **Act Mode**: После утверждения плана или в режиме YOLO
+
+**Особенности:**
+- Поддержка двух режимов работы
+- Условная логика для YOLO mode
+- Кастомизация через template overrides
+
+---
+
+### 5. TASK_PROGRESS - Отслеживание прогресса
+
+**Файл:** `src/core/prompts/system-prompt/components/task_progress.ts`
+
+**Назначение:** Инструкции по отслеживанию прогресса многоэтапных задач через чеклисты.
+
+**Промпт (стандартный вариант):**
+
+```
+Track progress on multi-step tasks using task_progress parameter with markdown checklists:
+- [ ] for incomplete items
+- [x] for completed items
+```
+
+**Промпт (Native Next-Gen вариант):**
+
+```
+The task_progress must be included as a separate parameter in the tool, it should not be
+included inside other content or argument blocks.
+```
+
+**Ключевые рекомендации:**
+- Создавать comprehensive todo списки при переходе в action mode
+- Обновлять чеклисты без уведомления пользователя
+- Фокусироваться на значимых вехах, а не на технических деталях
+- Переписывать чеклисты при изменении scope
+- Отмечать пункты как выполненные немедленно
+
+**Варианты:**
+- **Стандартный**: Для большинства моделей
+- **Native Next-Gen**: Для продвинутых моделей с нативными tool calls
+- **Native GPT-5**: Специальный вариант для GPT-5
+
+---
+
