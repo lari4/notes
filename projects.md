@@ -1,6 +1,82 @@
-# Open Source LLM Projects from Product Hunt - June, July, August, September, October & November 2025
+# Open Source LLM Projects from Product Hunt - May, June, July, August, September, October & November 2025
 
-Анализ проектов из топа Product Hunt за июнь, июль, август, сентябрь, октябрь и ноябрь 2025 года на предмет использования LLM технологий, наличия open source лицензии и публичного GitHub репозитория.
+Анализ проектов из топа Product Hunt за май, июнь, июль, август, сентябрь, октябрь и ноябрь 2025 года на предмет использования LLM технологий, наличия open source лицензии и публичного GitHub репозитория.
+
+---
+
+# 📅 May 2025 (Краткая справка)
+
+## ✅ Open Source проекты с LLM
+
+### 1. **DeepSeek-R1-0528** | MIT License
+- **GitHub:** https://github.com/deepseek-ai/DeepSeek-R1
+- **Описание:** Open-source LLM that rivals o3 in coding & reasoning
+- **Фичи:** 87.5% AIME 2025, 73.3% LiveCodeBench, 1930 Codeforces rating, 45-50% less hallucination
+
+### 2. **Flowise** ⭐ 35k+ | Apache 2.0 | YC
+- **GitHub:** https://github.com/FlowiseAI/Flowise
+- **Описание:** Build AI Agents, visually - drag & drop UI для LLM workflows
+- **Фичи:** Used by Fortune 500 (Thermo Fisher, Deloitte, AWS), multi-agent systems, RAG support
+
+### 3. **Ollama v0.7** | Open Source
+- **GitHub:** https://github.com/ollama/ollama
+- **Описание:** Run leading vision models locally with new multimodal engine
+- **Фичи:** Llama 4, Gemma 3, Qwen 2.5 VL, Mistral support, improved memory management
+
+### 4. **Phi-4-reasoning** | Open Model
+- **GitHub:** https://github.com/microsoft/PhiCookBook + Hugging Face
+- **Описание:** Microsoft's 14B params reasoning model (Phi-4-mini: 3.8B params)
+- **Фичи:** Beats o1-mini and DeepSeek-R1-Distill-70B, GitHub Models GA, Azure AI Foundry
+
+### 5. **Zed Agentic Editing** | GPL-3.0 & AGPL
+- **GitHub:** https://github.com/zed-industries/zed
+- **Описание:** Open-source IDE scratch-built in Rust with 100% more agents
+- **Фичи:** 120fps collaboration, Agent Client Protocol (ACP), macOS/Linux stable
+
+### 6. **GoCodeo SaaS Builder** | Open Source
+- **GitHub:** https://github.com/jatingarg619/saas-builder
+- **Описание:** AI agent that builds full-stack SaaS apps (Next.js + Supabase)
+- **Фичи:** Claude 3.7, GPT-4.1, Gemini 2.5 Pro support, multi-agent (UI/Auth/DB)
+
+### 7. **Morphik** | BSL 1.1 → Apache 2.0 (4 years)
+- **GitHub:** https://github.com/morphik-org/morphik-core
+- **Описание:** Open-source AI-native knowledge base with multi-modal RAG
+- **Фичи:** ColPali embeddings, knowledge graphs, < $2k/month gross revenue = free commercial
+
+### 8. **Cua** | MIT License | YC X25
+- **GitHub:** https://github.com/trycua/cua
+- **Описание:** Docker for Computer-Use AI Agents (macOS, Linux, Windows)
+- **Фичи:** Sandboxes, SDKs, benchmarks для CUA, OpenAI/Anthropic/Ollama support
+
+### 9. **Tiptap Editor 3.0 Beta** | MIT License | YC
+- **GitHub:** https://github.com/ueberdosis/tiptap
+- **Описание:** Headless rich text editor framework (30k stars)
+- **Фичи:** Full TypeScript, server-side, JSX support, 3M+ editors, React/Vue/Svelte
+
+### 10. **Appwrite Sites** | Open Source
+- **GitHub:** https://github.com/appwrite/appwrite
+- **Описание:** Open-source Vercel alternative - frontend + backend в одном
+- **Фичи:** Static + SSR support, GitHub integration, global CDN, self-hosting
+
+## 📊 Краткая статистика May 2025
+
+**Всего проверено:** 184 проекта
+**Open source с LLM:** 10 основных
+**Ключевые тренды:**
+- 🧠 **Reasoning Models Boom** - DeepSeek-R1-0528 (MIT), Phi-4-reasoning (Microsoft, 14B beats o1-mini)
+- 🤖 **Visual AI Agent Builders** - Flowise (35k⭐, YC, Fortune 500 клиенты)
+- 🖥️ **Computer-Use Agents** - Cua (MIT, YC X25, "Docker для AI agents")
+- 💻 **Agentic IDEs** - Zed (GPL, Rust, Agent Client Protocol)
+- 🏗️ **Full-Stack AI Builders** - GoCodeo (Next.js + Supabase из промпта)
+- 📚 **AI Knowledge Bases** - Morphik (multi-modal RAG, ColPali)
+- 🌐 **Self-hosted Platforms** - Appwrite Sites (Vercel alternative)
+- 👁️ **Local Vision Models** - Ollama v0.7 (Llama 4, Gemma 3 support)
+
+**Особенность мая:**
+- Claude 4 release (коммерческий) - Opus 4 + Sonnet 4, state-of-the-art coding
+- Microsoft Phi-4-reasoning models dominate small model space
+- Strong focus на self-hosted & local-first solutions
+- Computer-Use Agents become mainstream (Cua YC launch)
 
 ---
 
@@ -1059,64 +1135,74 @@
 
 ---
 
-# 📊 Общая статистика (June, July, August, September, October + November 2025)
+# 📊 Общая статистика (May, June, July, August, September, October + November 2025)
 
 ## Итоговые цифры
 
-**Всего проверено проектов:** 765+ (160+ июнь + 70+ июль + 120+ август + 170+ сентябрь + 160+ октябрь + 85+ ноябрь)
+**Всего проверено проектов:** 949+ (184 май + 160+ июнь + 70+ июль + 120+ август + 170+ сентябрь + 160+ октябрь + 85+ ноябрь)
 
-**✅ Open source проектов с LLM:** 50 основных
+**✅ Open source проектов с LLM:** 60 основных
 1. **n8n AI Workflow Builder** ⭐ 155k+ (октябрь)
 2. **Firecrawl v2.5** ⭐ 40k+ (октябрь и ноябрь)
 3. **Plane** ⭐ 39.8k+ (октябрь)
-4. **Gemini CLI** ⭐ 34k+ (июнь, Apache 2.0, Google)
-5. **opencode** ⭐ 30k+ (июль, SST team, 300k+ developers)
-6. **Reflex** ⭐ 27k+ (октябрь)
-7. **Teable 2.0** ⭐ 20k+ (сентябрь, AGPL-3.0)
-8. **ChartDB v2** ⭐ 19.8k+ (август, AGPL-3.0)
-9. **Director / Stagehand** ⭐ 17.4k+ (октябрь)
-10. **Onlook** ⭐ 8.5k+ (август, Apache 2.0, YC)
-11. **Glass by Pickle Team** ⭐ 6.9k+ (ноябрь)
-12. **Kilo Code for JetBrains** (сентябрь, 420k+ downloads)
-13. **Kimi K2** (июль, 1T params MoE от Moonshot AI)
-14. **Dyad** (июнь, Apache 2.0, local AI app builder)
-15. **NativeMind** (июнь, AGPL-3.0, on-device AI assistant)
-16. **Hugging Face AISheets** (июнь, open source, AI spreadsheets)
-17. **FLUX.1 Kontext** (июнь, 12B params, image editing)
-18. **Twenty CRM + MCP Servers** (июнь, open source, MCP integration)
-19. **OpenAI Open Models (gpt-oss)** (август, Apache 2.0)
-20. **DeepSeek-V3.1** (август, MIT License)
-21. **Grok 2.5 OSS** (август, xAI)
-22. **TensorZero** (август, $7.3M seed, Apache 2.0)
-23. **mcp-use** (август, SDK для MCP)
-24. **stagewise** (август, YC S25)
-25. **Omnara** (август, Apache 2.0, YC S25)
-26. **Cipher by Byterover** (август, Elastic License 2.0)
-27. **Agent S / OpenACI** (август, Apache 2.0)
-28. **Jaaz** (август, Magic Canvas Agent)
-29. **AI Elements by Vercel** (август)
-30. **Ollama App** (август)
-31. **Stream Vision Agents** (июль, open source video+audio AI)
-32. **Intervo** (июль, MIT License, conversational AI)
-33. **Trae Agent** (июль, ByteDance Context Engineer)
-34. **Droidrun** (июль, MIT, mobile AI control)
-35. **21st.dev 2.0** (июль, open source + magic-mcp)
-36. **Kombai** (июль, partial open source)
-37. **Open ChatGPT Atlas** (октябрь)
-38. **nanochat** (октябрь, by Andrej Karpathy)
-39. **GraphBit** (сентябрь, Rust + Python framework)
-40. **tambo** (сентябрь, React orchestration)
-41. **Ito** (октябрь, Voice Dictation)
-42. **ElevenLabs UI** ⭐ 1k+ (октябрь)
-43. **Ona / Gitpod** (сентябрь, sandboxed agents)
-44. **Web to MCP** (сентябрь)
-45. **Figma MCP** (сентябрь, несколько реализаций)
-46. **Recal.dev** (сентябрь, partial open source)
-47. **Billing SDK** (сентябрь)
-48. **Starbase by Metorial** (октябрь, MCP testing)
-49. **MCP Playground** (ноябрь, несколько реализаций)
-50. **Helicone.ai** (ноябрь, YC W23, Apache 2.0)
-51. **Packmind Open Source** (ноябрь)
+4. **Flowise** ⭐ 35k+ (май, Apache 2.0, YC)
+5. **Gemini CLI** ⭐ 34k+ (июнь, Apache 2.0, Google)
+6. **Tiptap Editor 3.0** ⭐ 30k+ (май, MIT, YC)
+7. **opencode** ⭐ 30k+ (июль, SST team, 300k+ developers)
+8. **Reflex** ⭐ 27k+ (октябрь)
+9. **Teable 2.0** ⭐ 20k+ (сентябрь, AGPL-3.0)
+10. **ChartDB v2** ⭐ 19.8k+ (август, AGPL-3.0)
+11. **Director / Stagehand** ⭐ 17.4k+ (октябрь)
+12. **Onlook** ⭐ 8.5k+ (август, Apache 2.0, YC)
+13. **Glass by Pickle Team** ⭐ 6.9k+ (ноябрь)
+14. **Kilo Code for JetBrains** (сентябрь, 420k+ downloads)
+15. **Kimi K2** (июль, 1T params MoE от Moonshot AI)
+16. **DeepSeek-R1-0528** (май, MIT License, beats o3)
+17. **Phi-4-reasoning** (май, Microsoft, 14B params)
+18. **Zed Agentic Editing** (май, GPL, Rust IDE)
+19. **Ollama v0.7** (май, vision models locally)
+20. **GoCodeo SaaS Builder** (май, open source, Next.js)
+21. **Morphik** (май, BSL → Apache 2.0)
+22. **Cua** (май, MIT, YC X25, Docker for CUA)
+23. **Appwrite Sites** (май, open source, Vercel alternative)
+24. **Dyad** (июнь, Apache 2.0, local AI app builder)
+25. **NativeMind** (июнь, AGPL-3.0, on-device AI assistant)
+26. **Hugging Face AISheets** (июнь, open source, AI spreadsheets)
+27. **FLUX.1 Kontext** (июнь, 12B params, image editing)
+28. **Twenty CRM + MCP Servers** (июнь, open source, MCP integration)
+29. **OpenAI Open Models (gpt-oss)** (август, Apache 2.0)
+30. **DeepSeek-V3.1** (август, MIT License)
+31. **Grok 2.5 OSS** (август, xAI)
+32. **TensorZero** (август, $7.3M seed, Apache 2.0)
+33. **mcp-use** (август, SDK для MCP)
+34. **stagewise** (август, YC S25)
+35. **Omnara** (август, Apache 2.0, YC S25)
+36. **Cipher by Byterover** (август, Elastic License 2.0)
+37. **Agent S / OpenACI** (август, Apache 2.0)
+38. **Jaaz** (август, Magic Canvas Agent)
+39. **AI Elements by Vercel** (август)
+40. **Ollama App** (август)
+41. **Stream Vision Agents** (июль, open source video+audio AI)
+42. **Intervo** (июль, MIT License, conversational AI)
+43. **Trae Agent** (июль, ByteDance Context Engineer)
+44. **Droidrun** (июль, MIT, mobile AI control)
+45. **21st.dev 2.0** (июль, open source + magic-mcp)
+46. **Kombai** (июль, partial open source)
+47. **Open ChatGPT Atlas** (октябрь)
+48. **nanochat** (октябрь, by Andrej Karpathy)
+49. **GraphBit** (сентябрь, Rust + Python framework)
+50. **tambo** (сентябрь, React orchestration)
+51. **Ito** (октябрь, Voice Dictation)
+52. **ElevenLabs UI** ⭐ 1k+ (октябрь)
+53. **Ona / Gitpod** (сентябрь, sandboxed agents)
+54. **Web to MCP** (сентябрь)
+55. **Figma MCP** (сентябрь, несколько реализаций)
+56. **Recal.dev** (сентябрь, partial open source)
+57. **Billing SDK** (сентябрь)
+58. **Starbase by Metorial** (октябрь, MCP testing)
+59. **MCP Playground** (ноябрь, несколько реализаций)
+60. **Helicone.ai** (ноябрь, YC W23, Apache 2.0)
+61. **Packmind Open Source** (ноябрь)
 
 **🔍 Дополнительные open source находки:**
 - **AskUI Vision Agent** (основа для Caesr AI, октябрь) - MIT
@@ -1140,17 +1226,19 @@
 1. 🥇 **n8n AI Workflow Builder** - 155,300+ ⭐ (октябрь)
 2. 🥈 **Firecrawl v2.5** - 40,000+ ⭐ (октябрь и ноябрь)
 3. 🥉 **Plane** - 39,800+ ⭐ (октябрь)
-4. **Gemini CLI** - 34,000+ ⭐ (июнь, Google, Apache 2.0)
-5. **opencode** - 30,000+ ⭐ (июль, SST team)
-6. **Reflex** - 27,000+ ⭐ (октябрь)
-7. **Teable 2.0** - 20,000+ ⭐ (сентябрь)
-8. **ChartDB v2** - 19,800+ ⭐ (август)
-9. **Director / Stagehand** - 17,400+ ⭐ (октябрь)
-10. **Open SaaS 2.0** - 10,000+ ⭐ (октябрь)
-11. **Onlook** - 8,500+ ⭐ (август)
-12. **OpenStatus** - 7,950+ ⭐ (октябрь)
-13. **Glass** - 6,900+ ⭐ (ноябрь)
-14. **ElevenLabs UI** - 1,000+ ⭐ (октябрь)
+4. **Flowise** - 35,000+ ⭐ (май, Apache 2.0, YC)
+5. **Gemini CLI** - 34,000+ ⭐ (июнь, Google, Apache 2.0)
+6. **Tiptap Editor 3.0** - 30,000+ ⭐ (май, MIT, YC)
+7. **opencode** - 30,000+ ⭐ (июль, SST team)
+8. **Reflex** - 27,000+ ⭐ (октябрь)
+9. **Teable 2.0** - 20,000+ ⭐ (сентябрь)
+10. **ChartDB v2** - 19,800+ ⭐ (август)
+11. **Director / Stagehand** - 17,400+ ⭐ (октябрь)
+12. **Open SaaS 2.0** - 10,000+ ⭐ (октябрь)
+13. **Onlook** - 8,500+ ⭐ (август)
+14. **OpenStatus** - 7,950+ ⭐ (октябрь)
+15. **Glass** - 6,900+ ⭐ (ноябрь)
+16. **ElevenLabs UI** - 1,000+ ⭐ (октябрь)
 
 ## Категории использования LLM
 
@@ -1190,9 +1278,10 @@
 
 ## 📈 Выводы
 
-1. **Проанализировано 765+ проектов** за июнь, июль, август, сентябрь, октябрь и ноябрь 2025, найдено **50 open source LLM проектов**
+1. **Проанализировано 949+ проектов** за май, июнь, июль, август, сентябрь, октябрь и ноябрь 2025, найдено **60 open source LLM проектов**
 
 2. **Динамика по месяцам**:
+   - **Май 2025 - Reasoning Models & Computer-Use Boom**: 10 open source LLM проектов, включая DeepSeek-R1-0528 (MIT, beats o3), Phi-4 (Microsoft), Cua (YC X25), Claude 4 release
    - **Июнь 2025 - Privacy & Local AI**: 6 open source LLM проектов, включая Gemini CLI от Google (34k⭐), privacy-first решения (NativeMind, Dyad)
    - **Июль 2025 - Developer Tools & Agentic Models**: 8 open source LLM проектов, включая opencode (30k⭐, 300k devs), Kimi K2 (1T params), первый video-first AI SDK
    - **Август 2025 - Open-weight революция**: 14 open source LLM проектов, включая первые open-weight модели от OpenAI, xAI и DeepSeek
@@ -1204,7 +1293,13 @@
    - **MCP Protocol набирает momentum**: mcp-use SDK (август) → Web to MCP, Figma MCP (сентябрь) → Starbase (октябрь) → MCP Playground, Packmind (ноябрь)
    - n8n (155k ⭐) остается лидером по популярности
 
-4. **Новые тренды June-November 2025**:
+4. **Новые тренды May-November 2025**:
+   - 🧠 **Reasoning Models Dominance** - DeepSeek-R1-0528 (MIT, 87.5% AIME), Phi-4 (14B beats o1-mini), фокус на reasoning
+   - 🖥️ **Computer-Use Agents Go Mainstream** - Cua (MIT, YC X25, "Docker for CUA"), Agent S (69.9% OSWorld)
+   - 🤖 **Visual AI Agent Builders** - Flowise (35k⭐, YC, Fortune 500), drag & drop для LLM workflows
+   - 💻 **Agentic IDEs** - Zed (GPL, Rust, Agent Client Protocol), интеграция AI в IDE
+   - 🏗️ **Full-Stack AI Builders** - GoCodeo (Next.js + Supabase из промпта), Appwrite Sites
+   - 📚 **AI Knowledge Bases** - Morphik (multi-modal RAG, ColPali), production-ready search
    - 🔒 **Privacy-first AI Revolution** - NativeMind (AGPL-3.0, 100% on-device), Dyad (local AI builder), фокус на приватность
    - 🤖 **Google входит в open source** - Gemini CLI (34k⭐, Apache 2.0), 1M token context window
    - 🎨 **AI Image Editing** - FLUX.1 Kontext (12B params, open-weight, consumer hardware)
@@ -1218,15 +1313,22 @@
    - 🗣️ **Conversational AI Platforms** - Intervo (MIT, visual workflows, LangChain)
    - 🚀 **Open-weight Models Explosion** - OpenAI gpt-oss (Apache 2.0), Grok 2.5 OSS - крупнейшие компании выпускают open-weight модели
    - 🔌 **MCP (Model Context Protocol) explosion** - стандарт от Anthropic стал ключевым трендом осени, начиная с mcp-use в августе
-   - 🧠 **Computer Use Agents** - Agent S достиг 69.9% на OSWorld, production-grade агенты (Simular)
-   - 🦀 **Rust for AI** - новое направление для высокопроизводительных AI инструментов (GraphBit, Helicone.ai)
-   - 💻 **AI Coding Tools бум** - Onlook (8.5k⭐), stagewise (YC), Omnara (YC), Cipher, Kilo Code (420k загрузок)
+   - 🦀 **Rust for AI** - новое направление для высокопроизводительных AI инструментов (GraphBit, Helicone.ai, Zed)
    - 🏢 **Enterprise-ready стacks** - TensorZero ($7.3M seed), ChartDB (19.8k⭐)
    - 🚪 **AI Infrastructure** выходит на первый план (Helicone.ai от YC W23, TensorZero)
    - 🧠 **Context Engineering** становится отдельной дисциплиной (Trae Agent от ByteDance, Packmind, Cipher memory layer)
-   - 🐍 **Python-first AI tools** (Reflex, nanochat, GraphBit)
+   - 👁️ **Local Vision Models** - Ollama v0.7 (Llama 4, Gemma 3, Qwen 2.5 VL)
+   - ✍️ **Rich Text Editors** - Tiptap 3.0 (30k⭐, MIT, 3M+ editors)
 
 5. **Важные релизы**:
+   - **Claude 4 (май)** - коммерческий, Opus 4 (72.5% SWE-bench) + Sonnet 4, state-of-the-art coding
+   - **DeepSeek-R1-0528 (май)** - MIT License, 87.5% AIME 2025, beats o3 in coding/reasoning
+   - **Phi-4-reasoning (май)** - Microsoft, 14B params beats o1-mini, GitHub Models GA
+   - **Flowise (май)** - 35k⭐, YC, used by Fortune 500 (Thermo Fisher, Deloitte, AWS)
+   - **Zed Agentic Editing (май)** - GPL, Agent Client Protocol, scratch-built in Rust
+   - **Cua (май)** - MIT, YC X25, "Docker for Computer-Use AI Agents"
+   - **Ollama v0.7 (май)** - vision models support (Llama 4, Gemma 3, Qwen 2.5 VL)
+   - **Tiptap Editor 3.0 (май)** - MIT, YC, 30k⭐, powers 3M+ editors
    - **Gemini CLI (июнь)** - 34k⭐, Google выпустил open-source AI agent под Apache 2.0
    - **Cursor 1.0 (июнь)** - коммерческий релиз с Bugbot, Background Agent, MCP setup
    - **Warp 2.0 (июнь)** - первая Agentic Development Environment (ADE)
@@ -1289,5 +1391,5 @@
 
 ---
 
-*Финальное обновление: 12 ноября 2025 (добавлен июнь 2025)*
-*Источники: Product Hunt Leaderboards - Best of June, July, August, September, October & November 2025*
+*Финальное обновление: 12 ноября 2025 (добавлен май 2025)*
+*Источники: Product Hunt Leaderboards - Best of May, June, July, August, September, October & November 2025*
